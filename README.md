@@ -16,7 +16,7 @@ This codebase gives solution to the cascading rectangular cardboard boxes levell
 
 ### Approach
 
-- The given input is sorted on basis of *x1*, *x2* and *h*
+- The given input is sorted on basis of *x1*, if equal then on basis of *x2*, if equal then on basis of *h*
 
 - Input is then preprocessed by checking if the cardboard boxes are subsuming or not (single pass)
 
