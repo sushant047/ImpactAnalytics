@@ -10,7 +10,7 @@ This codebase gives solution to the cascading rectangular cardboard boxes levell
   
   
 
-## rectangles script (python)
+## rectangles (python script)
 
   
 
