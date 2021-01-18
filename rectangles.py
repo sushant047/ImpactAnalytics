@@ -22,9 +22,13 @@ def getElevationCoordinates(inLen,cardboards):
             if currX2>prevX2:
                 #if new cardboard is taller than existing
                 if currH>prevH:
-                    cardboardsPP[prev]=(prevX1,cardboards[i][0],prevH)
-                    cardboardsPP.append(cardboards[i])
-                    prev+=1
+                    #previous and current cardboard start at same point
+                    if currX1==prevX1:
+                        cardboardsPP[prev]=cardboards[i]
+                    else:
+                        cardboardsPP[prev]=(prevX1,currX1,prevH)
+                        cardboardsPP.append(cardboards[i])
+                        prev+=1
                 #new cardboard is shorter than existing
                 else:
                     cardboardsPP.append((prevX2,currX2,currH))
